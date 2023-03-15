@@ -51,3 +51,5 @@ This repo uses Terraform to deploy
 
 
 5. Run ```terraform apply``` 
+
+6. **The MongoDB Sink connector is expected to deploy but fail to start due to a specific configuration. This is because the connector is set to read from a topic that does not yet exist. Unfortunately, the topic could not be created during deployment because the computer running the Terraform script lacks connectivity to the Kafka REST API required for topic creation.**
