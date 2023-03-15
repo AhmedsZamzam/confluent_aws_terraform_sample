@@ -1,9 +1,9 @@
 This repo uses Terraform to deploy
 
 1. Private Confluent Cloud cluster
-2. AWS VPC 
-3. Peering connection
-4. MongoDB Sink Connector
+2. An AWS VPC in your AWS Account
+3. Peering connection to the new VPC
+4. A MongoDB Sink Connector
 
 ### Prerequisites
 
