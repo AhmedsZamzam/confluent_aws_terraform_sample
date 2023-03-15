@@ -1,4 +1,19 @@
-### Notes
+This repo uses Terraform to deploy
+
+1. Private Confluent Cloud cluster
+2. AWS VPC 
+3. Peering connection
+4. MongoDB Sink Connector
+
+### Prerequisites
+
+1. An existing MongoDB Atlas DB
+2. AWS Keys
+3. Confluent Cloud API Keys with Oraganisation Admin privilege
+4. Terraform installed on your local computer
+
+
+### Important Note
 
 1. See [Sample Project for Confluent Terraform Provider](https://registry.terraform.io/providers/confluentinc/confluent/latest/docs/guides/sample-project) that provides step-by-step instructions of running this example.
 
@@ -21,3 +36,20 @@
     * Note that RBAC role bindings can be provisioned in either the first or second step, as they are provisioned through the [Confluent Cloud API](https://docs.confluent.io/cloud/current/api.html), not the [Kafka REST API](https://docs.confluent.io/cloud/current/api.html#tag/Topic-(v3))
 
 4. See [VPC Peering on AWS](https://docs.confluent.io/cloud/current/networking/peering/aws-peering.html) for more details.
+
+
+### Deployment
+
+1. Clone repo ```git clone <repo>```
+
+
+2. Change directory to terraform folder ```cd terraform```
+
+
+3. Edit ```terraform.tfvars``` with your inputs
+
+
+4. Run ```terraform init```
+
+
+5. Run ```terraform apply``` 
